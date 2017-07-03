@@ -1,9 +1,9 @@
 <?php
 
-// Using const with arrays requires PHP 5.6 or higher
 
 const PRESSURE_TO_ATM = array(
-  "Pa" => 0.000009869,
+  "pascal" => 0.000009869,
+  "megapascal" => 9.8692,
   "bar" => 0.9872,
   "mbar" => 0.0009872,
   "atm" => 1,
@@ -15,10 +15,13 @@ const PRESSURE_TO_ATM = array(
 
 const FLOWRATE_TO_LITERSEC = array(
   "cubic_feet_per_min" => 0.47195,
+  "cubic_meters_per_sec" => 1000,
+  "cubic_meters_per_min" => 16.7,
   "cubic_meters_per_hr" => .27778,
   "liters_per_sec" => 1,
   "liters_per_min" => .0166667,
   "liters_per_hr" => .000277778,
+  "gallons_per_min" => .0631,    
 );  
 
 const LEAKRATE_TO_MBARLSEC = array(
@@ -30,7 +33,7 @@ const LEAKRATE_TO_MBARLSEC = array(
   "Pa_liters/sec" => .01,
   "molecules/sec" => 45.24,
 ); 
-// Using const with arrays requires PHP 5.6 or higher
+
 const VOLUME_TO_LITER = array(
   "cubic_inches" => 0.0163871,
   "cubic_feet" => 28.3168,
@@ -39,17 +42,9 @@ const VOLUME_TO_LITER = array(
   "imperial_gallons" => 4.54609,
   "imperial_quarts" => 1.13652,
   "imperial_pints" => 0.568261,
-  "imperial_cups" => 0.284131,
-  "imperial_ounces" => 0.0284131,
-  "imperial_tablespoons" => 0.0177582,
-  "imperial_teaspoons" => 0.00591939,
   "us_gallons" => 3.78541,
   "us_quarts" => 0.946353,
   "us_pints" => 0.473176,
-  "us_cups" => 0.24,
-  "us_ounces" => 0.0295735,
-  "us_tablespoons" => 0.0147868,
-  "us_teaspoons" => 0.00492892,
   "liters" => 1,
   "milliliters" => 0.001,
 );  
